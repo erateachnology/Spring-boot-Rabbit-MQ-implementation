@@ -1,0 +1,23 @@
+spring:
+  profiles: local
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/danicode
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    addresses: localhost:5672
+server:
+  port: 8000
+queue:
+  name: dani_code_queue
+topic:
+  exchange:
+    name: dani_code_exchange
+routing:
+  key: dani_code_routingkey
+
+

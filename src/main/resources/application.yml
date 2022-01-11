@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: DaniCode
+  profiles:
+    active: local
+

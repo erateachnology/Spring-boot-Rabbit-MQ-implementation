@@ -1,0 +1,18 @@
+spring:
+  profiles: k8s
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: ${DB_DATASOURCE}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: ${PORT}
+queue:
+  name : dani_code
+topic:
+  exchange:
+    name : dani_code_exchange
+
